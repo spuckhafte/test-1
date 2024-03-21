@@ -14,5 +14,19 @@ int binary_search(int arr[], int left, int right, int key) {
 }
 
 int main() {
+    int n;
+    printf("Len: ");
+    scanf("%d", &n);
 
+    printf("Enter the sorted array: ");
+    int arr[50];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Index of: ");
+    int m;
+    scanf("%d", &m);
+
+    printf("is %d\n", binary_search(arr, 0, n - 1, m)); 
 }
