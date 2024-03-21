@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int binary_search(int arr[], int left, int right, int key) {
     while (left <= right) {
@@ -19,7 +20,7 @@ int main() {
     scanf("%d", &n);
 
     printf("Enter the sorted array: ");
-    int arr[50];
+    int *arr = malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
